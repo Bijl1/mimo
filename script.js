@@ -89,7 +89,14 @@ if (messagesTwo < 1000) {
 
 let commonFriends = 3;
 if (commonFriends > 2) {
-    console.log("Greater than 2")
+    console.log("Greater than 2");
 } else {
     console.log("Not greater than 2");
+}
+
+let vw = 1989;
+if (vw > 2000) {
+    console.log("You got newer VW");
+} else {
+    console.log("You have beauitful VW Mk1");
 }
