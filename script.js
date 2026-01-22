@@ -278,3 +278,103 @@ const apartment = {
     }
    };
    apartment.display();
+
+   function addOneHundred(number) {
+    return number + 100;
+   }
+   const answer = addOneHundred(29);
+   console.log(answer);
+
+   function multiByTen(number) {
+    return number * 10;
+   }
+   const ten = multiByTen(30);
+   console.log(ten);
+
+   function isKilometer(meters){
+    if (meters === 1000) {
+        return "Exactly a kilometer";
+    }
+    return "Not a kilometer";
+   }
+   const resultTwo = isKilometer(5000);
+   console.log(resultTwo);
+
+   function isFair(boolean) {
+    if (boolean === true) {
+     return "That's fair";
+    } else {
+    return "That's not fair";
+    }
+   }
+   const resultThree = isFair(false);
+   console.log(resultThree);
+
+   function isTemperate(degrees) {
+    if (degrees < 32) {
+     return "Too cold";
+    } else if (degrees > 85) {
+     return "Too hot";
+    }
+    return "perfect"
+   }
+   const resultFour = isTemperate(75);
+   console.log(resultFour);
+
+   const numbers = [2, 4, 6, 8];
+   function printNumbers(numbers) {
+    for (let i = 0; i < numbers.length; i++) {
+    console.log(numbers[i])
+}
+}
+printNumbers(numbers);
+
+const firstNumber = 10;
+const secondNumber = 5;
+function add(num1, num2) {
+ return num1 + num2;
+}
+const resultFive = add(firstNumber, secondNumber);
+console.log(resultFive);
+
+const names = ['John', 'Adam', 'Sarah'];
+function printEachName(names) {
+ for (let i = 0; i < names.length; i++) {
+  console.log(names[i]);
+ }
+}
+printEachName(names);
+
+const languages = ["JavaScript", "C++", "Python"];
+function findLanguage(languages, language) {
+ for (let i = 0; i < languages.length; i++) {
+  if (languages[i] === language) {
+   console.log(language + " found!");
+   break;
+  } else {
+   console.log(language +
+    " does not exist or has not been found yet!.")
+  }
+ }
+}
+findLanguage(languages, "JavaScript");
+
+const prices = [100, 150, 200];
+const discounts = [0.1, 0.2, 0.25];
+function getValues(prices, discounts) {
+ let values = [prices, discounts];
+ for (let i = 0; i < prices.length; i++) {
+    values[i] = prices[i] * discounts[i]
+ }
+ console.log(values);
+}
+getValues(prices, discounts);
+
+const numbersTwo = [1, 2, 3, 4, 5];
+function double(numbersTwo) {
+ for (let i = 0; i < numbersTwo.length; i++) {
+  console.log(numbersTwo[i] * 2);
+ }
+}
+double(numbersTwo);
+
