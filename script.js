@@ -239,3 +239,42 @@ function launch() {
    console.log(first + " " + second + "" + third);
    }
    const result = printMsg ("Hello", "World", "!");
+
+   const microwave = {
+    brand: "Samsung",
+    heat: function () {
+        console.log("Now heating your food");
+    }
+   };
+   microwave.heat();
+
+   const employee = {
+    name: "Jim Halpert",
+    title: "Saleman",
+    displayName: function() {
+        console.log(this.name);
+        console.log(this.title);
+    }
+   }
+   employee.displayName();
+
+   const dog = {
+    name: "Sterling",
+    age: 5,
+    breed: "Lab Retriever",
+    ageUp: function () {
+        this.age++;
+        console.log(this.age);
+        console.log(this.name + " I miss you!");
+    }
+};
+dog.ageUp();
+
+const apartment = {
+    number: 404,
+    location: "unknown",
+    display: function() {
+     console.log(this.number = 200);
+    }
+   };
+   apartment.display();
