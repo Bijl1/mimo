@@ -100,3 +100,28 @@ if (vw > 2000) {
 } else {
     console.log("You have beauitful VW Mk1");
 }
+
+let repeat = true;
+while (repeat) {
+    repeat = false;
+}
+
+var keepPlaying = true;
+while (keepPlaying === true) {
+    console.log("Now Playing");
+    console.log("Never Gonna Give You Up");
+    keepPlaying = false;
+    console.log("Not Playing");
+}
+
+let displayAd = true;
+while (displayAd === true) {
+    console.log("Sign up for this new app");
+    displayAd = false;
+}
+
+var repearMessage = true;
+while (repearMessage === true) {
+    console.log("Hi, there!");
+    repearMessage = false;
+}
