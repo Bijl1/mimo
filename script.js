@@ -158,3 +158,16 @@ for (let i = 0; i < 3; i++) {
 }
 console.log(nose);
 console.log(" o ");
+
+const background = "beige";
+const texts = "salmon";
+const colorScheme = [background, texts];
+console.log(colorScheme);
+
+const topSpeeds = [500, 130, 200];
+topSpeeds[2] = 7;
+console.log(topSpeeds);
+
+const scientists = ["Ada Lovelace", "Margaret Hamilton", "Grace Hopper"];
+console.log(scientists[2])
+console.log(scientists[0]);
