@@ -171,3 +171,71 @@ console.log(topSpeeds);
 const scientists = ["Ada Lovelace", "Margaret Hamilton", "Grace Hopper"];
 console.log(scientists[2])
 console.log(scientists[0]);
+
+function morningRoutine () {
+    console.log("Lights off");
+    console.log("Alarm set");
+} morningRoutine();
+
+function launch() {
+    console.log("3");
+    console.log("2");
+    console.log("1");
+    console.log("Electronics failure!");
+    console.log("Abort");
+   }
+   launch();
+
+   function deviceUpdate () {
+    console.log("Starting update");
+    console.log("Do not power off");
+   }
+   deviceUpdate();
+
+   function checkPoints () {
+    const points = 5;
+    const required = 20;
+    console.log("Requirement reached");
+    console.log(points > required);
+   }
+   checkPoints();
+
+   function decreaseVolume() {
+    console.log("Volume down");
+   }
+   decreaseVolume();
+   decreaseVolume();
+
+   function getAge(info) {
+    return info[1];
+   }
+   console.log("The person's age is: " + getAge(["Jon John", 37, "Texas"]) + " years.");
+  
+   function getName(info) {
+    return info[0];
+   }
+   console.log("My name is: " + getName(["John John", 37, "Texas"]));
+  
+   function getBMI (height, weight) {
+   return weight / (height * weight);
+   }
+   const bmi = getBMI(2.7, 70);
+   console.log(bmi);
+
+   function greet(salutation, firstName, lastName) {
+    return "Good day " + salutation + "" + firstName + " " + lastName + "!";
+   }
+   const greeting = greet("Dr. ", "John", "Banner");
+   console.log(greeting);
+
+   function addToPot (first, second, third) {
+    console.log("Boil " + first);
+    console.log("Add " + second);
+    console.log("Cook " + third);
+   }
+   addToPot("water", "salt", "pasta");
+
+   function printMsg(first, second, third) {
+   console.log(first + " " + second + "" + third);
+   }
+   const result = printMsg ("Hello", "World", "!");
