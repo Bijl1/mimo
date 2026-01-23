@@ -378,3 +378,54 @@ function double(numbersTwo) {
 }
 double(numbersTwo);
 
+function visitCountry() {
+    const country= "Holland";
+    console.log(country);
+} 
+visitCountry();
+
+let cityToVisit = "Dan Haag";
+function travel() {
+    console.log("Let's go to " + cityToVisit);
+}
+travel();
+console.log(cityToVisit);
+
+const greetGuest  = () => {
+    console.log("Hi " + "Jon");
+    console.log("Hola " + "Jon");
+   };
+   greetGuest();
+
+   const greetGuestTwo = (name) => {
+    console.log("Hi " + name);
+    console.log("Hola " + name);
+   }
+   greetGuestTwo("Jon");
+
+   const canDrive = (age) => {
+    if (age >= 16) {
+     return "Yes";
+    } else {
+     return "No";
+    }}
+      canDrive(17);
+
+
+    const isEvenNumber = (number) => number % 2 == 0;
+    console.log(isEvenNumber(24));
+
+    const shouldDeployChute = (altitude) => {
+        if (altitude <= 2000) return true;
+        return false;
+       };
+
+    let balance = 100;
+    const withdraw = amount => {
+        balance = balance - amount;
+        if (balance < 0) {
+            console.log("Overdrawn"); 
+        }
+    };
+    console.log("Balance: ", balance);
+        withdraw(150);
