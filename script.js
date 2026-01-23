@@ -429,3 +429,22 @@ const greetGuest  = () => {
     };
     console.log("Balance: ", balance);
         withdraw(150);
+
+    const fullName = "Helen McGuire";
+    console.log("Hello " + fullName + "!");
+    console.log(`Hello ${fullName}!`);
+
+    const greetings = (name) => {
+        return `Bonjour ${name}`;
+    };
+    console.log(greetings`John`);
+
+    let ticketPrice = 100;
+    let persons = 5;
+    let total = `Total cost: ${ticketPrice * persons}`;
+    console.log(total);
+
+    const likeBy = person => {
+        return `Movie liked by: ${person}`;
+    }
+    console.log(likeBy `Jon`);
