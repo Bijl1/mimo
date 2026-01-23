@@ -448,3 +448,31 @@ const greetGuest  = () => {
         return `Movie liked by: ${person}`;
     }
     console.log(likeBy `Jon`);
+
+    const cars = ["Honda", "VW", "Jeep", "Bentley", "Cadillac", "Toyota", "Chevy", "Nissan", "KIA"];
+    if (cars[0] === "VW") {
+        console.log("The prettiest car is a Hyundai");
+    } else if (cars[1] === "Jeep") {
+        console.log("The prettiest car is Jeep");
+    } else {
+        console.log(`${cars[2]} cars are prettier than ${cars[8]} cars.`);
+    }
+
+    const carsTwo = ["Honda", "VW", "Jeep", "Bentley", "Cadillac", "Toyota", "Chevy", "Nissan", "KIA"];
+    const [firstCar, secondCar, threeCar, fourCar, fiveCar, sixCar, sevenCar, eightCar, nineCar] = carsTwo;
+    if (firstCar === "Hyundai") {
+        console.log("The prettiest car is a Hyundai");
+    } else if (secondCar === "Jeep") {
+        console.log("The prettiest car is Jeep");
+    } else {
+        console.log(`${threeCar} cars are prettier than ${nineCar} cars.`);
+    }
+    
+    const [companyName, phone, address] = [`Leo Pizza`, `3053055994`, `305 SW Main ST, Bunkie`];
+    console.log(companyName);
+    console.log(phone);
+    console.log(address);
+
+    const [companyNameTwo, ...addressTwo] = [`Leo Pizza`, `3053055994`, `305 SW Main ST, Bunkie`];
+    console.log(companyNameTwo);
+    console.log(addressTwo);
