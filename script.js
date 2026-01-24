@@ -512,3 +512,32 @@ const normalSeats = 32100;
 const vipSeats = 450;
 const fans = `Fan ${normalSeats + vipSeats}`;
 console.log(fans);
+
+const favoriteIceCream = `Strawbery`;
+console.log(favoriteIceCream);
+
+const aircrafts = {
+ brandTwo: 'Boeing',
+ nose: 'Pointed nose',
+ windshield: 'V-shaped windshield',
+ tail: 'Sloped Tail',
+};
+const {
+    brandTwo,
+    noseTwo,
+    windshield,
+    tail
+}
+= aircrafts;
+console.log(`The ${brandTwo} Company was founded on July 15, 1916.`);
+console.log(`This aircraft has a ${noseTwo}, and a ${windshield}`);
+console.log(`And at least but not last a ${tail}`);
+
+const mountains = ["Swiss Alps", "Mount Logan", "Mount Fuji",
+ "Mauna Kea", "Jotunheimen Mountains"
+];
+function getMountainsNickname([alps, logan]) {
+ console.log(`The ${alps} are The Magical Mountains.`);
+ console.log(`The ${logan} is The Snowy Paradise.`);
+}
+getMountainsNickname(mountains);
