@@ -608,3 +608,20 @@ console.log(top3);
 const finishersTwo = ["Snail", "Rabbit", "Shark", "Frog"];
 const top2 = finishersTwo.filter((finisherTwo, place) => place < 2);
 console.log(top2);
+
+const miles = [33, 95, 88];
+let totalTwo = 0;
+for (const element of miles) {
+    totalTwo += element;
+}
+console.log(totalTwo);
+
+const digits = [55, 44, 33];
+const totalThree = digits.reduce(function(one, two) {
+    return one + two;
+});
+console.log(totalThree);
+
+const digitsTwo = [55, 91, 33];
+const totalFour = digitsTwo.reduce((one, two) => one + two);
+console.log(totalFour);
