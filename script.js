@@ -541,3 +541,37 @@ function getMountainsNickname([alps, logan]) {
  console.log(`The ${logan} is The Snowy Paradise.`);
 }
 getMountainsNickname(mountains);
+
+const fahrenheit = [72, 68, 70, 74, 77, 75, 79];
+const celsius = [];
+for (const element of fahrenheit) {
+    let c = (element - 32) * (5/9);
+    celsius.push(c);
+}
+console.log(celsius);
+
+const fahrenheitTwo = [72,69,54];
+const celsiusTwo = fahrenheit.map(function(temp){
+    return Math.round((temp - 32) * 5/9);
+});
+console.log(celsiusTwo);
+
+const values =  [56, 59, 49, 41];
+const evenOrOdd = values.map(function(element) {
+    return (element % 2) == 0;
+});
+console.log(evenOrOdd);
+
+const queue = ["Sarah", "Hank", "Chris", "Beatrice"];
+const displayQueue = queue.map(function(element, index) {
+    return index + ": " + element;
+});
+console.log(displayQueue);
+
+const states = [`fl`, `md`, `va`, `ca`];
+const uppercaseStates = states.map((element) => element.toUpperCase());
+console.log(uppercaseStates);
+
+const valuesTwo = [1, 2, 3, 4];
+const doubled = values.map(element => element * 2);
+console.log(doubled);
