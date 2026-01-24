@@ -476,3 +476,39 @@ const greetGuest  = () => {
     const [companyNameTwo, ...addressTwo] = [`Leo Pizza`, `3053055994`, `305 SW Main ST, Bunkie`];
     console.log(companyNameTwo);
     console.log(addressTwo);
+
+    const userInformation = {
+    firstName: "John",
+    lastName: " Smith",
+    ageTwo: 41,
+};
+const { firstName, lastName, ageTwo } = userInformation;
+console.log(firstName, lastName, ageTwo);
+
+const carInformation = {
+    item1: "Ram",
+    item2: "3500",
+    item3: "White",
+};
+const {
+    item1: brand,
+    item2: model,
+    item3: color,
+} = carInformation;
+console.log(brand);
+console.log(model);
+console.log(color);
+
+const bananas = 20;
+const oranges = 10;
+const fruits = `Fruits : ${bananas + oranges}`;
+console.log(fruits);
+
+const game = `soccer`;
+const eventName = `${game} tournament`;
+console.log(eventName);
+
+const normalSeats = 32100;
+const vipSeats = 450;
+const fans = `Fan ${normalSeats + vipSeats}`;
+console.log(fans);
