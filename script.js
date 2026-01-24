@@ -575,3 +575,36 @@ console.log(uppercaseStates);
 const valuesTwo = [1, 2, 3, 4];
 const doubled = values.map(element => element * 2);
 console.log(doubled);
+
+const testScore = [72, 95, 90, 71, 75, 100];
+const arr = [];
+for (const element of testScore) {
+    if (element >= 90) {
+        arr.push(element);
+    }
+}
+console.log(arr);
+
+const testScoresTwo = [100, 51, 75, 96];
+const arrTwo = testScoresTwo.filter(element => element >= 90);
+console.log(arrTwo);
+
+const namesTwo = ["Tony", "Sanno", "Courtney", "Tin", "Tinman"];
+const arrThree = namesTwo.filter(element => (element[0] === "T"));
+console.log(arrThree);
+
+const pricesTwo = [10.99, 20.99, 18.99, 12.99, 1.99];
+const inBudget = pricesTwo.filter(function(element) {
+    return element < 20;
+});
+console.log(inBudget);
+
+const finishers = ["Snail", "Rabbit", "Shark", "Frog"];
+const top3 = finishers.filter(function(finishers, place) {
+    return place < 3;
+});
+console.log(top3);
+
+const finishersTwo = ["Snail", "Rabbit", "Shark", "Frog"];
+const top2 = finishersTwo.filter((finisherTwo, place) => place < 2);
+console.log(top2);
