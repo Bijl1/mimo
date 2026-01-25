@@ -648,3 +648,20 @@ const largeOrder = customerTotals.filter(function(total) {
     return total > 80;
 });
 console.log(largeOrder);
+
+const lcStates = ["md", "fl"];
+const ucStates = lcStates.map(element => element.toUpperCase());
+console.log(ucStates);
+
+const gallons = [1.2, 4.5, 3.1];
+const liters = gallons.map(function(element) {
+    return element * 3.8;
+});
+console.log(liters);
+
+const ratios = [0.79, 0.88, 0.68, 0.95];
+const percentages = ratios.map(function(element) {
+  return (element * 100) + "%";
+});
+console.log(percentages)
+
