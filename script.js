@@ -625,3 +625,26 @@ console.log(totalThree);
 const digitsTwo = [55, 91, 33];
 const totalFour = digitsTwo.reduce((one, two) => one + two);
 console.log(totalFour);
+
+const correct = [58, 48, 60, 49, 55];
+const percentageScores = 
+    correct.map(function(element) {
+        return element / 60;
+    });
+    console.log(percentageScores);
+
+const pricesThree = [1.99, 2.49, 0.99, 4.99];
+const taxed = pricesThree.map(price => price * 1.1);
+console.log(taxed);
+
+const numbersThree = [49, 48, 24, 18, 23, 21];
+const evens = numbers.map(element => (element % 2 == 0));
+console.log(evens);
+const odds = numbers.map(element => (element % 3 == 0));
+console.log(odds);
+
+const customerTotals = [99, 56, 42, 100, 29];
+const largeOrder = customerTotals.filter(function(total) {
+    return total > 80;
+});
+console.log(largeOrder);
