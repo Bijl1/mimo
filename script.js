@@ -665,3 +665,16 @@ const percentages = ratios.map(function(element) {
 });
 console.log(percentages)
 
+const statesTwo = ["Alaska", "Maryland", "Pennsylvania", "Alabama", "Arkansas"];
+const A = states.filter(element => (element[0] === "A"));
+console.log(A);
+
+const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const q4 = months.filter(function(month, index)  {
+  return index > -1; 
+});
+console.log(q4);
+
+const heights = [66, 75, 73, 56, 62];
+const tall = heights.filter((height) => height > 72);
+  console.log(tall);
