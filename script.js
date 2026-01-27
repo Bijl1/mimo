@@ -678,3 +678,27 @@ console.log(q4);
 const heights = [66, 75, 73, 56, 62];
 const tall = heights.filter((height) => height > 72);
   console.log(tall);
+
+function isTooTall(person) {
+    return person[2] >= 180;
+}
+const person = ["Jon", 40, 100, 134, 200, 594, 1010];
+if (isTooTall(person)) {
+    console.log(person[0] + " is too tall 😂");
+} else {
+    console.log(person[0] + " is not too tall");
+}
+
+
+function isTooTallTwo(personTwo) {
+    return personTwo.height >= 190;
+}
+const personTwo = {
+    name: "Jon",
+    age: 400,
+    weight: 200,
+    height: 195
+};
+console.log(
+    personTwo.name + (isTooTallTwo(personTwo) ? " is too tall 😂" : " is not too tall")
+);
