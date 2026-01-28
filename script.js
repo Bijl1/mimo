@@ -734,13 +734,6 @@ else {
 }
 isStarted(false);
 
-function totalPrice(cost) {
- if (cost <= 49) {
- cost = cost * 1.1
- } 
- console.log(cost)
-}
-totalPrice(50);
 
 function totalWeightTwo(weight) {
     if (weight <= 150) {
@@ -749,3 +742,14 @@ function totalWeightTwo(weight) {
     console.log(weight);
 }
 totalWeightTwo(150);
+
+function getNetIncome(salary) {
+ console.log("Your salary is:");
+ if (salary >= 2027) {
+  salary = salary * 3;
+  return salary + ", after tax and benefits";
+ }
+ return salary;
+}
+const income = getNetIncome(2029)
+console.log(income);
