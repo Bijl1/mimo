@@ -702,3 +702,23 @@ const personTwo = {
 console.log(
     personTwo.name + (isTooTallTwo(personTwo) ? " is too tall 😂" : " is not too tall")
 );
+
+function hasPassed(score) {
+    if (score >= 50) {
+        console.log("Passed");
+    }
+    else {
+        console.log("You Failed");
+    }
+}
+hasPassed(40)
+
+function boatSize (size) {
+    if (size >= 34) {
+        console.log("Perfect size");
+    }
+    else {
+        console.log("Too small");
+    }
+}
+boatSize(34);
