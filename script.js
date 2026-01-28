@@ -733,3 +733,19 @@ else {
   }
 }
 isStarted(false);
+
+function totalPrice(cost) {
+ if (cost <= 49) {
+ cost = cost * 1.1
+ } 
+ console.log(cost)
+}
+totalPrice(50);
+
+function totalWeightTwo(weight) {
+    if (weight <= 150) {
+        weight = weight * 2
+    }
+    console.log(weight);
+}
+totalWeightTwo(150);
