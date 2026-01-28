@@ -753,3 +753,10 @@ function getNetIncome(salary) {
 }
 const income = getNetIncome(2029)
 console.log(income);
+
+function displayNumbers() {
+ for (let i = 3; i < 10; i++) {
+  console.log(i);
+ }
+}
+displayNumbers();
