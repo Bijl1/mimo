@@ -722,3 +722,14 @@ function boatSize (size) {
     }
 }
 boatSize(34);
+
+function isStarted(boolean) {
+ console.log("Remote start initiated...");
+ if (boolean === true) {
+   console.log("Boat started successfully!");
+ }
+else {
+    console.log("Unable to start boat");
+  }
+}
+isStarted(false);
