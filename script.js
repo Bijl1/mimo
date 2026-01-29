@@ -809,3 +809,22 @@ console.log(isMultiNumber(0));
 
 const sailingDirection = (direction) => direction === "North";
 console.log(sailingDirection("West"));
+console.log(sailingDirection("East"));
+console.log(sailingDirection("South"));
+console.log(sailingDirection("North"));
+
+const sailingDir = (direction) => {
+    switch(direction) {
+        case "North":
+        return "Heading North!";
+        case "South":
+            return "Heading South!";
+            case "East":
+                return "Heading East!";
+                case "West":
+                    return "Heading West!";
+                    default:
+                        return "Unknown direction!";
+    }
+};
+console.log(sailingDir("East"));
