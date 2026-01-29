@@ -800,3 +800,12 @@ const dailyMotivation = (today) => {
  else console.log("You are an inspiration to everyone around you.");
 };
 dailyMotivation("mo");
+
+const isOddNumber = (number) => number % 3 == 0;
+console.log(isOddNumber(111));
+
+const isMultiNumber = (number) => number * 2;
+console.log(isMultiNumber(0));
+
+const sailingDirection = (direction) => direction === "North";
+console.log(sailingDirection("West"));
