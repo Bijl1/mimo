@@ -760,3 +760,43 @@ function displayNumbers() {
  }
 }
 displayNumbers();
+
+function displayAlert(message) {
+ for (let i = 0; i < 5; i++) {
+  console.log(message)
+ }
+}
+
+displayAlert("I will practice Javascript");
+
+function displayCountdown(start) {
+ for (let i=start; i > 0; i--) {
+  console.log(i);
+ }
+ console.log("Launch!");
+}
+displayCountdown(10);
+
+const greetGuestThree = () => {
+ console.log("Hi " + "Jon");
+ console.log("Hola " + "Jon");
+}
+greetGuestThree();
+
+const dailyMotivationFlat = () => {
+    console.log("You are capable of anything you set your mind to ");
+}
+dailyMotivationFlat();
+
+const greetGuestGuest = (name) => {
+ console.log("Hoi " + name);
+ console.log("Hi", name);
+}
+greetGuestGuest("Sterling");
+
+const dailyMotivation = (today) => {
+ if (today === "mon") console.log(
+  "You are capable of anything you set your mind to.");
+ else console.log("You are an inspiration to everyone around you.");
+};
+dailyMotivation("mo");
