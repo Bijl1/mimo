@@ -838,3 +838,9 @@ console.log(spray);
 const [berryTea, ...otherTeas]  = ['Berry', 'Chai', 'Chamomile', 'Citrus', 'Fruity'];
 console.log(`The ${berryTea} tea has Sun-proofing and Nourishing effects.`);
 console.log(otherTeas[0]);
+
+const [, , , italianBread] = ['Sourdough', 'Baguette', 'Brioche', 'Focaccia',
+ 'Multigrain'
+];
+console.log(
+ `${italianBread} is leavened bread than produces a fluffy appearance.`);
