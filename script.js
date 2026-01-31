@@ -834,3 +834,7 @@ console.log(top);
 console.log(bottom);
 console.log(outerwear);
 console.log(spray);
+
+const [berryTea, ...otherTeas]  = ['Berry', 'Chai', 'Chamomile', 'Citrus', 'Fruity'];
+console.log(`The ${berryTea} tea has Sun-proofing and Nourishing effects.`);
+console.log(otherTeas[0]);
