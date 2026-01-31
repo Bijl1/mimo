@@ -855,3 +855,51 @@ const {boatBrand, size, year, mastHeight} = boat;
 console.log(`The ${boatBrand} company was founded on July 15, 1916.`);
 console.log(`This boat has a ${size} hull and was built in ${year}.`);
 console.log(`Last but not least, it features a mast height of ${mastHeight}.`);
+
+const smartTV = {
+ type: "QLED",
+ shape: "Flat",
+ ports: "HDMI",
+ connectivity: 'Wi-Fi'
+};
+const {type: screenType,
+       shape: screenShape,
+    ports: screenPorts,
+connectivity: screenConnectivity} = smartTV;
+console.log(screenType);
+console.log(screenShape);
+console.log(screenPorts);
+console.log(screenConnectivity);
+
+const oldShows = {
+ fifties: "Maverick",
+ sixties: "The Saint",
+ seventies: "The Love Boat",
+ eighties: "Manimal",
+ nineties: "Dawson's Creek"
+};
+const {eighties, ...otherOldShows} = oldShows;
+console.log(`The best tv show in the 80s was ${eighties}`);
+console.log(otherOldShows);
+
+const beer = {
+ name: '	Blue Moon White',
+ alcoholPercentage: 5.4,
+ calories: 171,
+ carbs: 12.9
+};
+const {
+    brandFive = "N/A"
+} = beer;
+console.log(brandFive);
+
+const mountainsTow = ["Swiss Alps", "Mount Logan", "Mount Fuji",
+ "Mauna Kea", "Jotunheimen Mountains"
+];
+
+function getMountainsNickname([alps, logan, fuji, kea, Jotunheimun]) {
+ console.log(`The ${alps} are The Magical Mountains.`);
+ console.log(`The ${fuji} is The Snowy Paradise.`);
+ console.log(`${Jotunheimun}`)
+}
+getMountainsNickname(mountainsTow);
