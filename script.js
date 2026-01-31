@@ -828,3 +828,9 @@ const sailingDir = (direction) => {
     }
 };
 console.log(sailingDir("East"));
+
+const [top, bottom, outerwear, spray] = ["T100", "T50", "LOGO", "Spraying"];
+console.log(top);
+console.log(bottom);
+console.log(outerwear);
+console.log(spray);
