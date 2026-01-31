@@ -844,3 +844,14 @@ const [, , , italianBread] = ['Sourdough', 'Baguette', 'Brioche', 'Focaccia',
 ];
 console.log(
  `${italianBread} is leavened bread than produces a fluffy appearance.`);
+
+ const boat = {
+ boatBrand: `Catalina`,
+ size: 34,
+ year: 1987,
+ mastHeight: 46,
+};
+const {boatBrand, size, year, mastHeight} = boat;
+console.log(`The ${boatBrand} company was founded on July 15, 1916.`);
+console.log(`This boat has a ${size} hull and was built in ${year}.`);
+console.log(`Last but not least, it features a mast height of ${mastHeight}.`);
