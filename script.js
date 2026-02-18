@@ -896,10 +896,23 @@ console.log(brandFive);
 const mountainsTow = ["Swiss Alps", "Mount Logan", "Mount Fuji",
  "Mauna Kea", "Jotunheimen Mountains"
 ];
-
 function getMountainsNickname([alps, logan, fuji, kea, Jotunheimun]) {
  console.log(`The ${alps} are The Magical Mountains.`);
  console.log(`The ${fuji} is The Snowy Paradise.`);
  console.log(`${Jotunheimun}`)
 }
 getMountainsNickname(mountainsTow);
+
+document.getElementById("showBtn").addEventListener("click", () => {
+    const secret = document.getElementById("secret");
+    secret.classList.toggle("hidden");
+});
+
+document.getElementById("volunteerForm").addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const firstDay = document.getElementById("firstDay").value;
+
+    alert(`Thank you ${name}! Your first day is ${firstDay}.`);
+});
